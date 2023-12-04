@@ -1,0 +1,33 @@
+
+entity DemoMeeting {
+	created ZonedDateTime
+    date ZonedDateTime required
+    email String required
+}
+
+entity SalesLead {
+	created ZonedDateTime
+	phoneNumber String
+    email String
+    note String
+    status SalesLeadStatus
+}
+
+
+enum SalesLeadStatus {
+    NEW
+}
+
+
+// Set pagination options
+// paginate SalesLead, DemoMeeting with infinite-scroll
+paginate * with pagination
+
+// Use Data Transfer Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+service * with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
