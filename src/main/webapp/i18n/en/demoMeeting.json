@@ -1,0 +1,26 @@
+{
+  "tiskelWebsiteApp": {
+    "demoMeeting": {
+      "home": {
+        "title": "Demo Meetings",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Demo Meeting",
+        "createOrEditLabel": "Create or edit a Demo Meeting",
+        "notFound": "No Demo Meetings found"
+      },
+      "created": "A new Demo Meeting is created with identifier {{ param }}",
+      "updated": "A Demo Meeting is updated with identifier {{ param }}",
+      "deleted": "A Demo Meeting is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Demo Meeting {{ id }}?"
+      },
+      "detail": {
+        "title": "Demo Meeting"
+      },
+      "id": "ID",
+      "created": "Created",
+      "date": "Date",
+      "email": "Email"
+    }
+  }
+}

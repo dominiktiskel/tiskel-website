@@ -1,0 +1,48 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="salesLead">
+      <h2 data-cy="salesLeadDetailsHeading"><span jhiTranslate="tiskelWebsiteApp.salesLead.detail.title">Sales Lead</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ salesLead.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="tiskelWebsiteApp.salesLead.created">Created</span></dt>
+        <dd>
+          <span>{{ salesLead.created | formatMediumDatetime }}</span>
+        </dd>
+        <dt><span jhiTranslate="tiskelWebsiteApp.salesLead.phoneNumber">Phone Number</span></dt>
+        <dd>
+          <span>{{ salesLead.phoneNumber }}</span>
+        </dd>
+        <dt><span jhiTranslate="tiskelWebsiteApp.salesLead.email">Email</span></dt>
+        <dd>
+          <span>{{ salesLead.email }}</span>
+        </dd>
+        <dt><span jhiTranslate="tiskelWebsiteApp.salesLead.note">Note</span></dt>
+        <dd>
+          <span>{{ salesLead.note }}</span>
+        </dd>
+        <dt><span jhiTranslate="tiskelWebsiteApp.salesLead.status">Status</span></dt>
+        <dd>
+          <span jhiTranslate="{{ 'tiskelWebsiteApp.SalesLeadStatus.' + salesLead.status }}">{{ salesLead.status }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/sales-lead', salesLead.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

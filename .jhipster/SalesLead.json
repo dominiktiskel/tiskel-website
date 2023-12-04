@@ -1,0 +1,34 @@
+{
+  "applications": "*",
+  "changelogDate": "20231204111321",
+  "dto": "mapstruct",
+  "entityTableName": "sales_lead",
+  "fields": [
+    {
+      "fieldName": "created",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "phoneNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "note",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "SalesLeadStatus",
+      "fieldValues": "NEW"
+    }
+  ],
+  "name": "SalesLead",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

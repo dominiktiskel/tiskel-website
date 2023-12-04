@@ -1,0 +1,28 @@
+{
+  "tiskelWebsiteApp": {
+    "salesLead": {
+      "home": {
+        "title": "Sales Lead",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Dodaj Sales Lead",
+        "createOrEditLabel": "Dodaj lub edytuj: Sales Lead",
+        "notFound": "No Sales Leads found"
+      },
+      "created": "Utworzono nowy obiekt typu Sales Lead z identyfikatorem {{ param }}",
+      "updated": "Uaktualniono obiekt typu Sales Lead z identyfikatorem {{ param }}",
+      "deleted": "Usunięto obiekt typu Sales Lead z identyfikatorem {{ param }}",
+      "delete": {
+        "question": "Czy na pewno chcesz usunąć Sales Lead {{ id }}?"
+      },
+      "detail": {
+        "title": "Sales Lead"
+      },
+      "id": "ID",
+      "created": "Created",
+      "phoneNumber": "Phone Number",
+      "email": "Email",
+      "note": "Note",
+      "status": "Status"
+    }
+  }
+}
